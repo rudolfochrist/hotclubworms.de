@@ -1,0 +1,60 @@
+@import "chota.min";
+@import "fontawesome.min";
+@import "brands.min";
+@import "solid.min";
+@import "fonts.css.scss";
+
+:root {
+    --color-primary: #14854F;
+    --font-family-sans: "Open Sans", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poiret One', sans-serif;
+}
+
+#top, nav, main, footer {
+    margin-top: 2.8rem;
+}
+
+.title {
+    font-size: 3.2rem;
+    font-weight: bolder;
+    text-shadow: 1px 0 black,
+                 0 -1px black,
+                 -1px 0 black,
+                 0 1px black,
+                 1.1px 1.1px black,
+                 1.2px 1.2px black,
+                 1.3px 1.3px black,
+                 1.4px 1.4px black,
+                 1.5px 1.5px black,
+                 1.6px 1.6px black,
+                 1.7px 1.7px black,
+                 1.8px 1.8px black,
+                 1.9px 1.9px black
+    ;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+#main-nav.tabs {
+    flex-direction: column;
+}
+
+#main-nav.tabs > a:first-child {
+    border-top: 2px solid var(--color-lightGrey);
+}
+
+#main-nav.tabs > a:not(:first-child) {
+    display: none;
+}
+
+nav {
+    font-family: 'Voltaire';
+    font-weight: bold;
+}
+
+footer {
+    font-size: 1.2rem;
+}

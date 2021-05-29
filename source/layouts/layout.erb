@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Use the title from a page's frontmatter if it has one -->
+        <title><%= current_page.data.title || "Hot Club Worms" %></title>
+        <%= stylesheet_link_tag "site" %>
+    </head>
+    <body>
+        <div id="top" class="container">
+            <header role="banner">
+                <div class="is-horizontal-align">
+                    <%= image_tag 'hcw-logo.png', alt: "Hot Club Worms Logo", width: "192px" %>
+                </div>
+                <div class="is-horizontal-align">
+                    <h1 class="text-uppercase title">Hot Club Worms</h1>
+                </div>
+                <div class="is-horizontal-align">
+                    <h4>Hot Jazz &amp; Swing</h4>
+                </div>
+            </header>
+            <nav id="main-nav" class="tabs is-full">
+                <a href="javascript:;" id="nav-toggle">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="#">Band</a>
+                <a href="#">Media</a>
+                <a href="#">Termine</a>
+                <a href="#">Kontakt</a>
+            </nav>
+            <main role="main">
+                <%= yield %>
+            </main>
+            <footer>
+                <p>
+                    &copy; 2021 Hot Club Worms -
+                    <a href="#">Impressum</a> -
+                    <a href="#">Datenschutzerkl&auml;ung</a>
+                </p>
+            </footer>
+        </div>
+        <%= javascript_include_tag "site" %>
+    </body>
+</html>
