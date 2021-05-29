@@ -13,10 +13,14 @@
         <div id="top" class="container">
             <header role="banner">
                 <div class="is-horizontal-align">
-                    <%= image_tag 'hcw-logo.png', alt: "Hot Club Worms Logo", width: "192px" %>
+                    <% link_to "/index.html" do %>
+                        <%= image_tag 'hcw-logo.png', alt: "Hot Club Worms Logo", width: "192px" %>
+                    <% end %>
                 </div>
                 <div class="is-horizontal-align">
-                    <h1 class="text-uppercase title">Hot Club Worms</h1>
+                    <% link_to "/index.html" do %>
+                        <h1 class="text-uppercase title">Hot Club Worms</h1>
+                    <% end %>
                 </div>
                 <div class="is-horizontal-align">
                     <h4>Hot Jazz &amp; Swing</h4>
