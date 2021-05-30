@@ -80,6 +80,10 @@ footer {
     height:100%;
 }
 
+.event .card em {
+    font-size: 1.2rem;
+}
+
 // larger viewport
 
 @media screen and (min-width: 600px) {
@@ -97,5 +101,9 @@ footer {
 
     section.ensemble .row {
         margin-bottom: 5rem;
+    }
+
+    .event .card {
+        width: 90%;
     }
 }
