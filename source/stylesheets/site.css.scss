@@ -75,4 +75,16 @@ footer {
     .profile-image {
         padding-top: 5%;
     }
+
+    #main-nav.tabs {
+        flex-direction: row;
+    }
+
+    #main-nav.tabs > a:first-child {
+        display: none;
+    }
+
+    #main-nav.tabs > a:not(:first-child) {
+        display: block;
+    }
 }
