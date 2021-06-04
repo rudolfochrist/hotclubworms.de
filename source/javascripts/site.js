@@ -35,7 +35,21 @@ function sortEvents() {
   }
 }
 
+function toggleBw(event) {
+  const imgs = document.querySelectorAll(".profile-image img");
+  imgs.forEach((img) => {
+    if (img.src.search("-bw") >= 0) {
+      img.src = img.src.replace("-bw", "");
+    } else {
+      img.src = img.src.replace(/\/(\w+)\.jpg/, "/$1-bw.jpg");
+    }
+  });
+}
+
 docReady(() => {
   const navToggle = document.querySelector("#nav-toggle");
   navToggle.onclick = toggleNavbar;
+
+  const toggleBwButton = document.querySelector("#bw-toggle");
+  toggleBwButton.onclick = toggleBw;
 });
