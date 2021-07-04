@@ -11,6 +11,14 @@
     </head>
     <body>
         <div id="top" class="container">
+            <div id="cookies-eu-banner" class="card" style="display: none;">
+                Diese Seite verwendet Cookies. Bitte akzeptieren Sie Cookies um die Benutzung dieser Seite zu optimieren.
+                <%= link_to "Mehr erfahren", "/privacy-policy.html#cookies", id: "cookies-eu-more" %>
+                <div>
+                    <button class="button outline secondary" id="cookies-eu-reject">Ablehnen</button>
+                    <button class="button success" id="cookies-eu-accept">Akzeptieren</button>
+                </div>
+            </div>
             <header role="banner">
                 <div class="is-horizontal-align">
                     <% link_to "/index.html" do %>
@@ -49,10 +57,12 @@
                 <p>
                     &copy; 2021 Sebastian Christ -
                     <%= link_to "Impressum", "/imprint.html" %> -
-                    <%= link_to "Datenschutzerklärung", "/privacy-policy.html" %>
+                    <%= link_to "Datenschutzerklärung", "/privacy-policy.html" %> -
+                    <%= link_to "Cookie-Einstellungen", "#", id: "cookie-settings"%>
                 </p>
             </footer>
         </div>
+        <%= javascript_include_tag "cookies-eu-banner.min" %>
         <%= javascript_include_tag "site" %>
     </body>
 </html>
