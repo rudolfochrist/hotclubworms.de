@@ -38,8 +38,6 @@ helpers do
 
   def nav_link(link_text, path, options = {})
     options[:class] ||= ""
-    puts current_page.url
-    puts path
     options[:class] << "active" if current_page.url.include? path
     link_to(link_text, "#{path}.html", options)
   end
