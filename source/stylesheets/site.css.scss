@@ -95,6 +95,17 @@ footer {
     margin-top: 2%;
 }
 
+#band-image {
+    height: 165px;
+
+    img {
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 // larger viewport
 
 @media screen and (min-width: 600px) {
@@ -112,5 +123,9 @@ footer {
 
     section.ensemble .row {
         margin-bottom: 5rem;
+    }
+
+    #band-image {
+        height: 460px;
     }
 }
