@@ -1,3 +1,5 @@
+require 'date'
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 activate :directory_indexes
@@ -40,6 +42,16 @@ helpers do
     options[:class] ||= ""
     options[:class] << "active" if current_page.url.include? path
     link_to(link_text, "#{path}.html", options)
+  end
+
+  def date_string(date)
+    d = DateTime.parse(date)
+    d.strftime "%d. %B %Y"
+  end
+
+  def time_string(date)
+    d = DateTime.parse(date)
+    d.strftime "%H:%M"
   end
 end
 

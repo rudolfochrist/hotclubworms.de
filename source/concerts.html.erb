@@ -6,20 +6,29 @@ title: Termine
         <div class="row">
             <div class="col">
                 <h2>Upcoming</h2>
-                <div class="row event">
-                    <div class="card is-full-width">
-                        <em>Bensheim</em><br/>
-                        <strong>22. August 2021 - 11:00 Uhr</strong>
-                        <header>
-                            <h3>Hochst&auml;dter Haus</h3>
-                        </header>
-                        <p>Jazz Frühschoppen</p>
-                        <a href="https://hochstädter-haus.de/">Link</a>
-                    </div>
+                <p id="no-upcoming-note" class="is-hidden">Derzeit gibt es keine anstehenden Veranstaltungen.</p>
+                <div id="upcoming">
                 </div>
             </div>
             <div class="col">
                 <h2>Veranstaltungen</h2>
+                <div id="events">
+                    <% data.events.each do |event| %>
+                    <div data-date="<%= event.date %>" class="row event">
+                        <div class="card is-full-width">
+                            <header>
+                                <h3><%= event.title %></h3>
+                            </header>
+                            <p>
+                                <strong><%= date_string event.date %> - <%= time_string event.date %> Uhr</strong><br/>
+                                <em><%= event.location %></em>
+                            </p>
+                            <p><%= event.description %></p>
+                            <a href="<%= event.url %>">Link</a>
+                        </div>
+                    </div>
+                    <% end %>
+                </div>
             </div>
         </div>
     </section>
