@@ -3,6 +3,7 @@ require 'date'
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 activate :directory_indexes
+activate :i18n, langs: :de
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -46,12 +47,7 @@ helpers do
 
   def date_string(date)
     d = DateTime.parse(date)
-    d.strftime "%d. %B %Y"
-  end
-
-  def time_string(date)
-    d = DateTime.parse(date)
-    d.strftime "%H:%M"
+    I18n.l d, format: :long
   end
 end
 
