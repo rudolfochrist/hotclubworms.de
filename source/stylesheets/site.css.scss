@@ -108,7 +108,8 @@ footer {
 
 #cookies-eu-banner {
     position: fixed;
-    width: 90%;
+    width: 95%;
+    overflow-y: scroll;
 }
 
 // larger viewport
@@ -132,5 +133,10 @@ footer {
 
     #band-image {
         height: 460px;
+    }
+
+    #cookies-eu-banner {
+        position: fixed;
+        width: 90%;
     }
 }
