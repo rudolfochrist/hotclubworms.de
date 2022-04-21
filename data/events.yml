@@ -1,16 +1,16 @@
 - title: Opener Gypsy Swing & Jazz Jam Session
   location: Manhheim
   date: "2022-02-17T20:00:00"
-  description: >-
+  note: >-
     Wir spielen als Session Opener von 20h-21h.
-  url: https://fb.me/e/6CTAO5y6K
+  link: https://fb.me/e/6CTAO5y6K
   
 - title: Hamburger Tor
   location: Worms
   date: "2021-10-03T12:00:00"
-  description: >-
+  note: >-
     Wir spielen als Trio beim "Gabelfrühstück und Blau" im Hamburger Tor in Worms
-  url: http://hamburger-tor.de/2021/09/26/gabelfruehstueck-und-blau/
+  link: http://hamburger-tor.de/2021/09/26/gabelfruehstueck-und-blau/
   
 - title: Private Veranstaltung
   location: Mannheim
@@ -19,15 +19,53 @@
 - title: Hochstädter Haus
   location: Bensheim
   date: "2021-08-29T11:00:00"
-  description: >-
+  note: >-
     Swing-Frühschoppen
-  url: https://hochstädter-haus.de/
+  link: https://hochstädter-haus.de/
 
 - title: Theater Mobile Sommerfest
   location: Zwingenberg/Bergstr.
   date: "2021-08-28T18:00:00"
-  description: >-
+  note: >-
     Um Anmeldung beim Theater Mobile wird gebeten. Siehe Link.
-  url: https://mobile-zwingenberg.de/
+  link: https://mobile-zwingenberg.de/
+
+- title: Lazy Sunday Afternoon
+  location: Hamburger Tor, Worms
+  date: "2022-05-01T15:00:00"
+  link: https://www.hamburger-tor.de/2022/04/13/lazy-sunday-afternoon/
+  note: >-
+    Alle Musiker sind herzlich eingeladen mit Instrument vorbeizukommen!
+
+- title: Luther & Kräuterbutter
+  location: Hamburger Tor, Worms
+  date: "2022-05-15T11:00:00"
+  link: https://www.hamburger-tor.de/event/luther-kraeuterbutter/
+
+- title: Weinfest Zwingenberg
+  location: Zwingenberg
+  date: "2022-06-03T20:30:00"
+
+- title: PopUp Worms
+  location: Elefantenhöfe, Worms
+  date: "2022-06-11T14:00:00"
+
+- title: Wormser Kulturnacht
+  location: Hamburger Tor, Worms
+  date: "2022-06-25T00:00:00"
+  note: >-
+    Mehr Informationen folgen!
+
+- title: Private Veranstaltung
+  location: Zwingenberg
+  date: "2022-09-03T00:00:00"
+
+- title: Private Veranstaltung
+  location: Hirschberg
+  date: "2022-09-17T00:00:00"
+
+
+
+
   
   

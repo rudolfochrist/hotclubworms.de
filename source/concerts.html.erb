@@ -23,9 +23,11 @@ title: Termine
                                 <strong><%= date_string event.date %></strong><br/>
                                 <em><%= event.location %></em>
                             </p>
-                            <p><%= event.description %></p>
-                            <% if event.url? %>
-                                <a href="<%= event.url %>">Link</a>
+                            <% if event.note? %>
+                                <p><%= event.note %></p>
+                            <% end %>
+                            <% if event.link? %>
+                                <a href="<%= event.link %>">Link</a>
                             <% end %>
                         </div>
                     </div>
