@@ -11,28 +11,6 @@
     </head>
     <body>
         <div id="top" class="container">
-            <div class="row">
-                <div class="col">
-                    <div id="cookies-eu-banner" class="card" style="display: none">
-                        Um die Benutzung dieser Seite zu verbesseren, binden wir Dienste von Drittanbietern ein, welche folgende
-                        Cookies verwenden:
-                        <ul>
-                            <li>YouTube-Cookies durch eingebettete YouTube-Videos</li>
-                        </ul>
-
-                        Durch Klick auf <b>Akzeptieren</b> erklären Sie sich damit einverstanden. Über die <b>Cookie-Einstellungen</b>
-                        im Footer haben Sie jederzeit die Möglichkeit, Ihre Einstellungen zu ändern.
-                        <br/>
-                        <%= link_to "Mehr Informationen.", "/privacy-policy.html#cookies", id: "cookies-eu-more" %>
-                        <br/>
-                        <br/>
-                        <div>
-                            <button class="button outline primary" id="cookies-eu-reject">Ablehnen</button>
-                            <button class="button outline primary" id="cookies-eu-accept">Akzeptieren</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <header role="banner">
                 <div class="is-horizontal-align">
                     <% link_to "/index.html" do %>
@@ -77,7 +55,6 @@
                 </p>
             </footer>
         </div>
-        <%= javascript_include_tag "cookies-eu-banner.min" %>
         <%= javascript_include_tag "site" %>
     </body>
 </html>
