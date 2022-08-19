@@ -106,6 +106,14 @@ footer {
     }
 }
 
+.gallery {
+    padding: 2%;
+
+    & > div:not(:first-child), & > img {
+        margin-top: 48px;
+    }
+}
+
 // larger viewport
 
 @media screen and (min-width: 600px) {
