@@ -49,7 +49,11 @@ docReady(() => {
 
   const cookieSettingsBtn = document.querySelector("#cookie-settings");
   if (cookieSettingsBtn != null) {
-    cookieSettingsBtn.onclick = () => {
+    cookieSettingsBtn.onclick = (event) => {
+      event.preventDefault();
+      console.log('called handler');
+      cc.eraseCookies(['cc_cookie', 'cc_youtube']);
+      window.location.reload();
     };
   }
 

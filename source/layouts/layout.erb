@@ -7,11 +7,13 @@
               content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Use the title from a page's frontmatter if it has one -->
         <title><%= current_page.data.title || "Hot Club Worms" %></title>
+        <%= stylesheet_link_tag "cookieconsent" %>
+        <%= stylesheet_link_tag "iframemanager" %>
         <%= stylesheet_link_tag "site" %>
     </head>
     <body>
         <div id="top" class="container">
-            <header role="banner">
+            <header>
                 <div class="is-horizontal-align">
                     <% link_to "/index.html" do %>
                         <%= image_tag 'hcw-logo.png', alt: "Hot Club Worms Logo", width: "192px" %>
@@ -55,6 +57,9 @@
                 </p>
             </footer>
         </div>
+        <%= javascript_include_tag "cookieconsent" %>
+        <%= javascript_include_tag "iframemanager" %>
+        <%= javascript_include_tag "cookieconsent-init" %>
         <%= javascript_include_tag "site" %>
     </body>
 </html>
