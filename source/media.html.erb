@@ -2,22 +2,52 @@
 title: Media
 ---
 <h1>Fotos und Videos</h1>
-<p>Hier gibt es demnächst mehr zu sehen.</p>
-<p class="is-hidden" id="yt-cookie-notice">Um die Videos sehen zu können, müssen Sie Cookies erlauben!</p>
-<div id="video-container">
+
+<div class="gallery">
+
+    <%= image_tag  "gallery/1.jpg" %>
     <div class="row">
-        <div class="col">
-            <div class="yt-container">
-                <iframe
-                    width="100%"
-                    height="315px"
-                    data-src=""
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
+        <div class="col"><%= image_tag "gallery/2.jpg" %></div>
+        <div class="col"><%= image_tag "gallery/3.jpg" %></div>
     </div>
+
+    <div class="row">
+        <div class="col"><%= image_tag "gallery/4.jpg" %></div>
+        <div class="col"><%= image_tag "gallery/5.jpg" %></div>
+    </div>
+
+    <%= image_tag "gallery/6.jpg" %>
+
+    <div class="row">
+        <div class="col"><%= image_tag "gallery/7.jpg" %></div>
+        <div class="col"><%= image_tag "gallery/8.jpg" %></div>
+    </div>
+
+    <%= image_tag "gallery/9.jpg" %>
+    <%= image_tag "gallery/10.jpg" %>
+
+    <div
+        data-service="youtube"
+        data-id="9KaQftBl7vg"
+        data-autoscale>
+    </div>
+
+    <div
+        data-service="youtube"
+        data-id="jV3yri0Cjyc"
+        data-autoscale>
+    </div>
+
+    <div
+        data-service="youtube"
+        data-id="6vXOR7ssxrM"
+        data-autoscale>
+    </div>
+
+    <div
+        data-service="youtube"
+        data-id="6wISjHtXmtI"
+        data-autoscale>
+    </div>
+
 </div>

@@ -47,25 +47,12 @@ docReady(() => {
   const navToggle = document.querySelector("#nav-toggle");
   navToggle.onclick = toggleNavbar;
 
-  new CookiesEuBanner(() => {
-    const ytCookieNotice = document.querySelector("#yt-cookie-notice");
-    if (ytCookieNotice != null) {
-      ytCookieNotice.style.display = 'none';
-      const videos = document.querySelectorAll(".yt-container iframe");
-      videos.forEach((video) => {
-        video.src = video.dataset.src;
-      });
-    }
-  }, true, true);
-
   const cookieSettingsBtn = document.querySelector("#cookie-settings");
   if (cookieSettingsBtn != null) {
-    cookieSettingsBtn.onclick = () => {
-      sessionStorage.clear();
-      const videoContainer = document.querySelector("#video-container");
-      if (videoContainer != null) {
-        videoContainer.innerHTML = "";
-      }
+    cookieSettingsBtn.onclick = (event) => {
+      event.preventDefault();
+      console.log('called handler');
+      cc.eraseCookies(['cc_cookie', 'cc_youtube']);
       window.location.reload();
     };
   }

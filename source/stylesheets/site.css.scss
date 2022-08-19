@@ -106,10 +106,12 @@ footer {
     }
 }
 
-#cookies-eu-banner {
-    position: fixed;
-    width: 95%;
-    overflow-y: scroll;
+.gallery {
+    padding: 2%;
+
+    & > div:not(:first-child), & > img {
+        margin-top: 48px;
+    }
 }
 
 // larger viewport
@@ -133,10 +135,5 @@ footer {
 
     #band-image {
         height: 460px;
-    }
-
-    #cookies-eu-banner {
-        position: fixed;
-        width: 90%;
     }
 }
