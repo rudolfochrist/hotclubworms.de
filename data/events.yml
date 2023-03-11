@@ -40,6 +40,7 @@
   link: https://www.hamburger-tor.de/event/lazy-sunday-afternoon-2/
 
 - title: Weihnachtsmarkt Worms
+  canceled: true
   location: Römischer Kaiser, Worms
   date: "2022-11-25T17:00:00"
   note: >-
@@ -49,12 +50,16 @@
 - title: Musikalische Begleitung Rotaach-Preis-Verleihung
   location: Hamburger Tor, Worms
   date: "2023-03-25T19:00:00"
-  note: >-
-    Mehr Informationen folgen...
+
+- title: HCW bei "Worms blüht auf"
+  location: Lotte & Klara, Worms
+  date: "2023-04-02T14:00:00"
 
 - title: Musik am Gammi
   location: Lutherplatz, Worms
   date: "2023-05-13T11:00:00"
+  note: >-
+    Hot Club Worms Trio Live erleben.
 
 - title: Konzert
   location: Theater Mobile, Zwingenberg
